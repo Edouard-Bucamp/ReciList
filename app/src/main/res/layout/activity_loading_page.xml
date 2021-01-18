@@ -37,10 +37,11 @@
         app:layout_constraintVertical_bias="0.489" />
 
     <ProgressBar
-        style="@style/Widget.AppCompat.ProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="184dp"
         android:layout_height="86dp"
         android:endColor="#FFFFFF"
+        android:centerColor="#FFFFFF"
         android:startColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
