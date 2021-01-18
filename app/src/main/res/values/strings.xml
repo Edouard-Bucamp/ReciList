@@ -3,4 +3,10 @@
     <string name="vos_recettes">Vos recettes</string>
     <string name="pate_carbo">Pâte Carbonara</string>
     <string name="hamburger_maison">Hamburger Maison</string>
+    <string name="ajouter_votre_image">Ajouter votre image</string>
+    <string name="nom_de_la_recette">Nom de la recette ...</string>
+    <string name="ingr_dients">Ingrédients :</string>
+    <string name="ajouter_un_ingr_dient">◯ Ajouter un ingrédient</string>
+    <string name="indiquez_les_tapes_de_pr_paration">Indiquez les étapes de préparation :</string>
+    <string name="ajouter_une_tape">◯ Ajouter une étape</string>
 </resources>
