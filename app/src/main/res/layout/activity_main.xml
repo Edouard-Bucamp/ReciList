@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
     <TextView
         android:id="@+id/mainAct_title"
         android:layout_width="wrap_content"
@@ -49,11 +69,7 @@
         android:id="@+id/recipies_Btn2"
         android:layout_width="380dp"
         android:layout_height="64dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
         android:layout_marginBottom="493dp"
         android:background="@android:color/white"
         android:elevation="10dp"
