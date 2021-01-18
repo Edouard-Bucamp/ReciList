@@ -13,7 +13,7 @@ public class LoadingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading_page);
 
-        //redirection vers la page principale "MainActiviy" après 3 secondes.
+        //redirection vers la page principale "MainActiviy" après 2 secondes.
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -25,7 +25,7 @@ public class LoadingPage extends AppCompatActivity {
         };
 
         //Handler post delayed
-        new Handler().postDelayed(runnable, 3000);
+        new Handler().postDelayed(runnable, 2000);
 
     }
 

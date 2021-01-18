@@ -44,7 +44,7 @@
         android:layout_height="4dp"
         android:indeterminate="true"
         android:indeterminateDrawable="@drawable/progress"
-        android:indeterminateDuration="3000"
+        android:indeterminateDuration="2000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
