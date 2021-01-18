@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:background="#47A23F"
     android:layout_height="match_parent"
-    tools:context=".LoadingPage">
+    tools:context=".LoadingPage"
+    >
 
     <TextView
         android:id="@+id/textView"
@@ -37,12 +38,13 @@
         app:layout_constraintVertical_bias="0.489" />
 
     <ProgressBar
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="184dp"
-        android:layout_height="86dp"
-        android:endColor="#FFFFFF"
-        android:centerColor="#FFFFFF"
-        android:startColor="#FFFFFF"
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="259dp"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:indeterminateDuration="3000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
