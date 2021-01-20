@@ -51,6 +51,7 @@
         android:layout_marginBottom="550dp"
         android:padding="6dp"
         android:text="Pâtes Carbonara"
+        android:onClick="Onclick"
         android:textAllCaps="false"
         android:textColor=" #47A23F"
         android:textSize="18sp"
