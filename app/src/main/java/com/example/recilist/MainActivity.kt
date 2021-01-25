@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Onclick(view: View) {
-        val intent = Intent (this, PageRecette::class.java);
+        val intent = Intent(this, page_ajout_recette::class.java);
         startActivity(intent);
     }
 
