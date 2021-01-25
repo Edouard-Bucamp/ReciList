@@ -61,50 +61,20 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:text="◯  Ajouter un ingrédient"/>
-
-    <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/indiquez_les_tapes_de_pr_paration"
         android:textColor=" #8C958B"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/ajouter_un_ingr_dient"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -116,5 +86,71 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/ajouter_un_ingr_dient"
+        android:textColor="#8C958B"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="17dp"
+        tools:listitem="@layout/list_ingredients"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:imeActionLabel="Ajouter"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="◯  Ajouter un ingrédient"
+        android:textColor="#8C958B"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        tools:layout_editor_absoluteX="15dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/ajouter_un_ingr_dient"
+        android:textColor="#8C958B"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_editor_absoluteX="17dp"
+        tools:listitem="@layout/list_etapes"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:imeActionLabel="Ajouter"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="◯  Ajouter une étape"
+        android:textColor="#8C958B"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+        tools:layout_editor_absoluteX="15dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
