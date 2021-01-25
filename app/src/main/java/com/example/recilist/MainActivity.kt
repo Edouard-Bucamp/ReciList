@@ -16,12 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.vosRecettes -> {
-                    Log.d("menu","choix 1")
-                    true
-                }
                 R.id.add_icon -> {
-                    Log.d("menu","choix 2")
+                    val intent = Intent (this, page_ajout_recette::class.java);
+                    startActivity(intent);
                     true
                 }
                 else -> false
