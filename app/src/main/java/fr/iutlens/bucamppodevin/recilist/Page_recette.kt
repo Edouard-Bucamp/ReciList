@@ -1,8 +1,9 @@
-package com.example.recilist
+package fr.iutlens.bucamppodevin.recilist
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.recilist.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class PageRecette : AppCompatActivity() {

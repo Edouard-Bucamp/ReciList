@@ -1,10 +1,12 @@
-package com.example.recilist;
+package fr.iutlens.bucamppodevin.recilist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.recilist.R;
 
 public class LoadingPage extends AppCompatActivity {
 

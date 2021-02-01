@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page_ajout_recette">
+    tools:context="fr.iutlens.bucamppodevin.recilist.page_ajout_recette">
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

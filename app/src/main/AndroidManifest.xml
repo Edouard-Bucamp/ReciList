@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReciList">
-        <activity android:name=".page_ajout_recette"></activity>
-        <activity android:name="PageRecette" />
-        <activity android:name=".LoadingPage">
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.page_ajout_recette"></activity>
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageRecette" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.LoadingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

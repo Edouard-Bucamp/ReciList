@@ -1,17 +1,17 @@
-package com.example.recilist
+package fr.iutlens.bucamppodevin.recilist
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recilist.R
 
-class list_etapes(private val dataSet: List<String>,
-                       private val list_etapes_layout: Int,
+class list_ingredients(private val dataSet: List<String>,
+                       private val list_ingredients_layout: Int,
                        private val onItemClickListener: ((Int) -> Unit)?,
                        private val onItemLongClickListener: ((Int) -> Boolean)?):
-    RecyclerView.Adapter<list_etapes.ViewHolder>() {
-
+    RecyclerView.Adapter<list_ingredients.ViewHolder>() {
     /**
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
@@ -24,7 +24,7 @@ class list_etapes(private val dataSet: List<String>,
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(list_etapes_layout, viewGroup, false)
+            .inflate(list_ingredients_layout, viewGroup, false)
 
         return ViewHolder(view)
     }

@@ -1,4 +1,4 @@
-package com.example.recilist
+package fr.iutlens.bucamppodevin.recilist
 
 import android.content.Intent
 import android.os.Build
@@ -9,6 +9,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.recilist.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.bottom_navigation
 import kotlinx.android.synthetic.main.activity_page_ajout_recette.*
@@ -35,7 +36,13 @@ class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener 
         }
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = list_ingredients(list, R.layout.list_ingredients, null, this::removeAt)
+        recyclerView.adapter =
+            list_ingredients(
+                list,
+                R.layout.list_ingredients,
+                null,
+                this::removeAt
+            )
         editText.setOnEditorActionListener(this)
     }
 

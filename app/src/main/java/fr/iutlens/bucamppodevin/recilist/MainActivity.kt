@@ -1,10 +1,11 @@
-package com.example.recilist
+package fr.iutlens.bucamppodevin.recilist
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.recilist.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
