@@ -25,11 +25,36 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+    }
 
-}
 
-    fun Onclick(view: View) {
+    fun Onclick_carbo(view: View) {
         val intent = Intent(this, PageRecette::class.java);
+        startActivity(intent);
+    }
+
+    fun Onclick_pain(view: View) {
+        val intent = Intent(this, PagePain::class.java);
+        startActivity(intent);
+    }
+
+    fun Onclick_crumble(view: View) {
+        val intent = Intent(this, PageCrumble::class.java);
+        startActivity(intent);
+    }
+
+    fun Onclick_crepes(view: View) {
+        val intent = Intent(this, PageCrepes::class.java);
+        startActivity(intent);
+    }
+
+    fun Onclick_bolo(view: View) {
+        val intent = Intent(this, PageBolo::class.java);
+        startActivity(intent);
+    }
+
+    fun Onclick_pancakes(view: View) {
+        val intent = Intent(this, PagePancakes::class.java);
         startActivity(intent);
     }
 
