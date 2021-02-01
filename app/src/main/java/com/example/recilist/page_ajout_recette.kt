@@ -1,11 +1,13 @@
 package com.example.recilist
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.bottom_navigation
@@ -14,9 +16,11 @@ import kotlinx.android.synthetic.main.activity_page_ajout_recette.*
 class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener {
     val list = mutableListOf<String>()
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page_ajout_recette)
+        recycler.setNestedScrollingEnabled(false)
 
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->

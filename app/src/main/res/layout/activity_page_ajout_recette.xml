@@ -7,75 +7,6 @@
     tools:context=".page_ajout_recette">
 
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor=" #47A23F"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
-        android:text="Nom de la recette . . ."/>
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/custom_button_add_recette"
-        android:fontFamily="@font/montserrat"
-        android:paddingTop="90dp"
-        android:paddingBottom="90dp"
-        android:text="@string/ajouter_votre_image"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#8C958B"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/ingr_dients"
-        android:textColor=" #8C958B"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/indiquez_les_tapes_de_pr_paration"
-        android:textColor=" #8C958B"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -87,70 +18,152 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/menu" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/ajouter_un_ingr_dient"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="8dp"
-        android:id="@+id/recyclerView"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="17dp"
-        tools:listitem="@layout/list_ingredients"/>
 
-    <EditText
-        android:id="@+id/editText"
+    <ScrollView
+        android:id="@+id/recycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:imeActionLabel="Ajouter"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="8dp"
-        android:text="◯  Ajouter un ingrédient"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-        tools:layout_editor_absoluteX="15dp" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- things to scroll -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor=" #47A23F"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.019"
+                android:text="Nom de la recette . . ."/>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/ajouter_un_ingr_dient"
-        android:textColor="#8C958B"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="8dp"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:layout_editor_absoluteX="17dp"
-        tools:listitem="@layout/list_etapes"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/custom_button_add_recette"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="90dp"
+                android:paddingBottom="90dp"
+                android:text="@string/ajouter_votre_image"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#8C958B"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:imeActionLabel="Ajouter"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="8dp"
-        android:text="◯  Ajouter une étape"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
-        tools:layout_editor_absoluteX="15dp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/ingr_dients"
+                android:textColor=" #8C958B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/ajouter_un_ingr_dient"
+                android:textColor="#8C958B"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:layout_editor_absoluteX="17dp"
+                tools:listitem="@layout/list_ingredients" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:imeActionLabel="Ajouter"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:text="◯  Ajouter un ingrédient"
+                android:textColor="#8C958B"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+                tools:layout_editor_absoluteX="15dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/indiquez_les_tapes_de_pr_paration"
+                android:textColor=" #8C958B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/ajouter_un_ingr_dient"
+                android:textColor="#8C958B"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                tools:layout_editor_absoluteX="17dp"
+                tools:listitem="@layout/list_etapes" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:imeActionLabel="Ajouter"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:text="◯  Ajouter une étape"
+                android:textColor="#8C958B"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+                tools:layout_editor_absoluteX="15dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
