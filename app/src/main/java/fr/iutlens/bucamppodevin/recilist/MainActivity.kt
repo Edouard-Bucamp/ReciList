@@ -28,34 +28,55 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun Onclick_carbo(view: View) {
-        val intent = Intent(this, PageRecette::class.java);
-        startActivity(intent);
+    fun Onclick(view: View) {
+        when (view.id) {
+            R.id.recipies_btn1 -> {
+                val intent = Intent(this, PageRecette::class.java);
+                startActivity(intent);
+            }
+            R.id.btn2 -> {
+                val intent = Intent(this, PageBolo::class.java);
+                startActivity(intent);
+            }
+            R.id.btn3 -> {
+                val intent = Intent(this, PageCookies::class.java);
+                startActivity(intent);
+            }
+            R.id.btn4 -> {
+                val intent = Intent(this, PageCrepes::class.java);
+                startActivity(intent);
+            }
+            R.id.btn5 -> {
+                val intent = Intent(this, PageCrumble::class.java);
+                startActivity(intent);
+            }
+            R.id.btn6 -> {
+                val intent = Intent(this, Pagefondant::class.java);
+                startActivity(intent);
+            }
+            R.id.btn7 -> {
+                val intent = Intent(this, PagePain::class.java);
+                startActivity(intent);
+            }
+            R.id.btn8 -> {
+                val intent = Intent(this, PageSalade::class.java);
+                startActivity(intent);
+            }
+            R.id.btn9 -> {
+                val intent = Intent(this, PagePancakes::class.java);
+                startActivity(intent);
+            }
+            R.id.btn10 -> {
+                val intent = Intent(this, PageTartiflette::class.java);
+                startActivity(intent);
+            }
+            R.id.btn11 -> {
+                val intent = Intent(this, PageTiramisu::class.java);
+                startActivity(intent);
+            }
+        }
     }
 
-    fun Onclick_pain(view: View) {
-        val intent = Intent(this, PagePain::class.java);
-        startActivity(intent);
-    }
 
-    fun Onclick_crumble(view: View) {
-        val intent = Intent(this, PageCrumble::class.java);
-        startActivity(intent);
-    }
-
-    fun Onclick_crepes(view: View) {
-        val intent = Intent(this, PageCrepes::class.java);
-        startActivity(intent);
-    }
-
-    fun Onclick_bolo(view: View) {
-        val intent = Intent(this, PageBolo::class.java);
-        startActivity(intent);
-    }
-
-    fun Onclick_pancakes(view: View) {
-        val intent = Intent(this, PagePancakes::class.java);
-        startActivity(intent);
-    }
 
 }

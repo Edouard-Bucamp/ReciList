@@ -8,6 +8,16 @@
     tools:context="fr.iutlens.bucamppodevin.recilist.MainActivity">
 
 
+    <ScrollView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
     <TextView
         android:id="@+id/actMain_title"
         android:layout_width="match_parent"
@@ -33,9 +43,9 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_carbo"
+        android:onClick="Onclick"
         android:padding="10dp"
-        android:text="Pâtes carbonara"
+        android:text="Pâtes Carbonara"
         android:textAllCaps="false"
         android:textColor=" #47A23F"
         android:textSize="18sp"
@@ -44,15 +54,15 @@
         app:layout_constraintTop_toBottomOf="@+id/actMain_title" />
 
     <Button
-        android:id="@+id/recipies_btn2"
+        android:onClick="Onclick"
+        android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_pain"
         android:padding="10dp"
-        android:text="Pain (rapide)"
+        android:text="Pâtes à la Bolognaise"
         android:textAllCaps="false"
         android:textColor="#47A23F"
         android:textSize="18sp"
@@ -60,14 +70,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recipies_btn1" />
 
+
     <Button
-        android:id="@+id/recipies_btn3"
+        android:onClick="Onclick"
+        android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_crumble"
+        android:padding="10dp"
+        android:text="Cookies"
+        android:textAllCaps="false"
+        android:textColor="#47A23F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+    <Button
+        android:onClick="Onclick"
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Pâte à Crêpes"
+        android:textAllCaps="false"
+        android:textColor="#47A23F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+    <Button
+        android:onClick="Onclick"
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
         android:padding="10dp"
         android:text="Crumble Poire Chocolat"
         android:textAllCaps="false"
@@ -75,50 +120,50 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipies_btn2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
 
     <Button
-        android:id="@+id/recipies_btn4"
+        android:onClick="Onclick"
+        android:id="@+id/btn6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_crepes"
         android:padding="10dp"
-        android:text="Pâte à crêpes"
+        android:text="Fondant au Chocolat"
         android:textAllCaps="false"
         android:textColor="#47A23F"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipies_btn3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
     <Button
-        android:id="@+id/recipies_btn5"
+        android:onClick="Onclick"
+        android:id="@+id/btn7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_bolo"
         android:padding="10dp"
-        android:text="Pâtes à la bolognaise"
+        android:text="Pain (rapide)"
         android:textAllCaps="false"
         android:textColor="#47A23F"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipies_btn4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn6" />
 
     <Button
-        android:id="@+id/recipies_btn6"
+        android:onClick="Onclick"
+        android:id="@+id/btn9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
-        android:onClick="Onclick_pancakes"
         android:padding="10dp"
         android:text="Pancakes"
         android:textAllCaps="false"
@@ -126,7 +171,62 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipies_btn5" />
+        app:layout_constraintTop_toBottomOf="@+id/btn7" />
+
+    <Button
+        android:onClick="Onclick"
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Salade César"
+        android:textAllCaps="false"
+        android:textColor="#47A23F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+
+    <Button
+        android:onClick="Onclick"
+        android:id="@+id/btn10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Tartiflette facile"
+        android:textAllCaps="false"
+        android:textColor="#47A23F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn8" />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:onClick="Onclick"
+        android:padding="10dp"
+        android:text="Tiramisu (recette originale)"
+        android:textAllCaps="false"
+        android:textColor="#47A23F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn10" />
+</LinearLayout>
+    </ScrollView>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

@@ -9,17 +9,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 class PageCrepes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page_recette)
+        setContentView(R.layout.recette_crepes)
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.vosRecettes -> {
                     val intent = Intent (this, MainActivity::class.java);
-                    startActivity(intent);
-                    true
-                }
-                R.id.add_icon -> {
-                    val intent = Intent (this, page_ajout_recette::class.java);
                     startActivity(intent);
                     true
                 }

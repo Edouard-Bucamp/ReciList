@@ -21,7 +21,6 @@ class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page_ajout_recette)
-        recycler.setNestedScrollingEnabled(false)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
 
