@@ -6,10 +6,10 @@ import android.os.Bundle
 import com.example.recilist.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class PageRecette : AppCompatActivity() {
+class PageCookies : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page_recette)
+        setContentView(R.layout.recette_cookies)
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
