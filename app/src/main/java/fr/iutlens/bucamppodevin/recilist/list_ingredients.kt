@@ -12,10 +12,8 @@ class list_ingredients(private val dataSet: List<String>,
                        private val onItemClickListener: ((Int) -> Unit)?,
                        private val onItemLongClickListener: ((Int) -> Boolean)?):
     RecyclerView.Adapter<list_ingredients.ViewHolder>() {
-    /**
-     * Provide a reference to the type of views that you are using
-     * (custom ViewHolder).
-     */
+
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.textView)
     }

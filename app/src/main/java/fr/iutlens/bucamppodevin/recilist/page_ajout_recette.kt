@@ -23,6 +23,14 @@ class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener 
         setContentView(R.layout.activity_page_ajout_recette)
         recycler.setNestedScrollingEnabled(false)
 
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
+        recyclerView.adapter = list_ingredients(list, R.layout.list_ingredients, null, null)
+
+
+        editText.setOnEditorActionListener(this)
+        list.add("essai")
+
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {
@@ -35,7 +43,6 @@ class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener 
             }
         }
 
-        recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter =
             list_ingredients(
                 list,
@@ -43,7 +50,6 @@ class page_ajout_recette : AppCompatActivity(), TextView.OnEditorActionListener 
                 null,
                 this::removeAt
             )
-        editText.setOnEditorActionListener(this)
     }
 
     override fun onEditorAction(textView: TextView?, actionId: Int, keyEvent: KeyEvent?): Boolean {
