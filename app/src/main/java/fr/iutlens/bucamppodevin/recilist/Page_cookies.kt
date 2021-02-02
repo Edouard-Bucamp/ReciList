@@ -3,13 +3,13 @@ package fr.iutlens.bucamppodevin.recilist
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.recilist.R
+import fr.iutlens.bucamppodevin.recilist.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class PageSalade : AppCompatActivity() {
+class PageCookies : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.recette_salade_cesar)
+        setContentView(R.layout.recette_cookies)
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when(item.itemId) {

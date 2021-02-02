@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.recilist.R;
+import fr.iutlens.bucamppodevin.recilist.R;
 
 public class LoadingPage extends AppCompatActivity {
 
