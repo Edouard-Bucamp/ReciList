@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recilist.R
+import fr.iutlens.bucamppodevin.recilist.R
 
 class list_ingredients(private val dataSet: List<String>,
                        private val list_ingredients_layout: Int,

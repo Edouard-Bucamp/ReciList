@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.example.recilist.R
+import fr.iutlens.bucamppodevin.recilist.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent);
             }
             R.id.btn6 -> {
-                val intent = Intent(this, Pagefondant::class.java);
+                val intent = Intent(this, PageFondant::class.java);
                 startActivity(intent);
             }
             R.id.btn7 -> {

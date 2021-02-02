@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.recilist">
+    package="fr.iutlens.bucamppodevin.recilist">
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,16 @@
         android:theme="@style/Theme.ReciList">
         <activity android:name="fr.iutlens.bucamppodevin.recilist.page_ajout_recette"></activity>
         <activity android:name="fr.iutlens.bucamppodevin.recilist.PageRecette" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageCookies" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageFondant" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageSalade" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageTartiflette" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageTiramisu" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageBolo" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageCrepes" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PageCrumble" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PagePain" />
+        <activity android:name="fr.iutlens.bucamppodevin.recilist.PagePancakes" />
         <activity android:name="fr.iutlens.bucamppodevin.recilist.LoadingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

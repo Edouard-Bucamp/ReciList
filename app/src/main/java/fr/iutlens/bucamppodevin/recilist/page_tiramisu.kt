@@ -3,7 +3,7 @@ package fr.iutlens.bucamppodevin.recilist
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.recilist.R
+import fr.iutlens.bucamppodevin.recilist.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class PageTiramisu : AppCompatActivity() {
