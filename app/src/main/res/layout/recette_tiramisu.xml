@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context="fr.iutlens.bucamppodevin.recilist.PageTiramisu">
 
+    <ScrollView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -294,6 +304,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         android:text="◯  Mettre au réfrigérateur 4 heures minimum puis déguster frais." />
 
+    </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

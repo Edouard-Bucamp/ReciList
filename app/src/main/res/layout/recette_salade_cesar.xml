@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context="fr.iutlens.bucamppodevin.recilist.PageSalade">
 
+    <ScrollView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -368,6 +378,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         android:text="◯  Décorez de copeaux de parmesan, et servez." />
 
+    </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
