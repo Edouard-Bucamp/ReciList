@@ -200,7 +200,7 @@
                 android:layout_marginRight="15dp"
                 android:onClick="Onclick"
                 android:padding="10dp"
-                android:text="Tartiflette facile"
+                android:text="Hamburger Maison"
                 android:textAllCaps="false"
                 android:textColor="#47A23F"
                 android:textSize="18sp"

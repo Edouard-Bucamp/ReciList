@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019"
-        android:text="Tartiflette facile" />
+        android:text="Hamburger Maison" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/carbo" />
+        app:srcCompat="@drawable/hamburger" />
 
     <TextView
         android:id="@+id/textView4"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:text="◯  2.5 kg de pomme de terre" />
+        android:text="◯ Pain pour hamburger" />
 
     <TextView
         android:id="@+id/textView11"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        android:text="◯  2 reblochons" />
+        android:text="◯ Viande hachée" />
 
     <TextView
         android:id="@+id/textView10"
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        android:text="◯  7 oignons" />
+        android:text="◯ Oignon" />
 
     <TextView
         android:id="@+id/textView14"
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        android:text="◯  20 cl de vin blanc de Savoie (Apremont si possible)" />
+        android:text="◯ Cheddar" />
 
     <TextView
         android:id="@+id/textView15"
@@ -134,7 +134,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        android:text="◯  30 cl de crème fleurette"/>
+        android:text="◯ Tomate"/>
 
     <TextView
         android:id="@+id/textView16"
@@ -149,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        android:text="◯  500 g de lardons fumés" />
+        android:text="◯ Salade" />
 
     <TextView
 
@@ -165,23 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        android:text="◯  Sel" />
-
-    <TextView
-
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        android:text="◯  Poivre" />
+        android:text="◯ Ketchup" />
 
     <TextView
         android:id="@+id/textView12"
@@ -213,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        android:text="◯  Cuire les pommes de terre à l’eau pendant 20 minutes, puis les éplucher et les couper en rondelles." />
+        android:text="◯ Faites revenir les oignons à feux doux." />
 
     <TextView
         android:id="@+id/textView18"
@@ -228,7 +212,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
-        android:text="◯  Emincer les oignons et les faire revenir dans un peu de beurre." />
+        android:text="◯ Ajouter les steaks." />
 
     <TextView
         android:id="@+id/textView19"
@@ -243,7 +227,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18"
-        android:text="◯  Ajouter les lardons fumés et laisser également revenir à feu assez doux (une dizaine de minutes) en remuant régulièrement." />
+        android:text="◯ Une fois saisi, poser une tranche de cheddar sur le steak et laisser fondre." />
 
     <TextView
         android:id="@+id/textView20"
@@ -273,7 +257,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
-        android:text="◯  Organiser le plat en trois couches : recouvrir le fond du plat de la moitié des pommes de terre, puis ajouter le mélange oignons et lardons, ajouter enfin par dessus le reste des pommes de terre." />
+        android:text="◯ Une fois cuit, déposer le steak et le fromage sur une des tranches du pain que vous aurez auparavant tartinée d'un mélange de ketchup et de moutarde." />
 
     <TextView
         android:id="@+id/textView22"
@@ -288,7 +272,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        android:text="◯  Verser dessus le vin blanc et la crème fleurette. Poivrer (assez copieusement) et saler (légèrement)." />
+        android:text="◯ Ajouter la salade et de petites rondelles de tomates." />
 
     <TextView
         android:id="@+id/textView23"
@@ -303,37 +287,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
-        android:text="◯  Préchauffer le four à 190°C (thermostat 6-7)." />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        android:text="◯  Gratter les reblochons, les couper en deux dans l'épaisseur et les poser (côté croûte en haut) sur le dessus des pommes de terre." />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:textColor="#8C958B"
-        android:textSize="12sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
-        android:text="◯  Enfourner environ 20 minutes (je mets le four en « chaleur tournante » + gril). Au moment de servir (dans le plat de cuisson), on peut saupoudrez d’un peu de persil haché. Ce plat unique se déguste (c’est le mot juste !) accompagné du vin utilisé pour la recette." />
+        android:text="◯ Vous pouvez maintenant recouvrir la préparation de l'autre tranche (avec ketchup et moutarde)."/>
 
     </LinearLayout>
     </ScrollView>
